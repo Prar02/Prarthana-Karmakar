@@ -1,10 +1,5 @@
 let tablinks = document.getElementsByClassName("tab-links");
 let tabcontents = document.getElementsByClassName("tab-contents");
-let project = document.querySelectorAll(".project-list");
-let layer = document.querySelectorAll(".layer");
-let image = document.querySelectorAll(".image");
-let hobby = document.querySelectorAll(".hobby");
-let i=0;
 
 function opentab(tabname){
     Array.from(tabcontents).forEach(tabcontent=>{
@@ -41,6 +36,9 @@ function closemenu(){
     sidemenu.style.right = "-147px";
 }
 
+let layer = document.querySelectorAll(".layer");
+let image = document.querySelectorAll(".image");
+let i=0;
 image.forEach((img,i)=>{
     img.addEventListener('click', function run(){
         if(img.style.transform=="scale(1.1)"){
@@ -68,6 +66,7 @@ image.forEach((img,i)=>{
     })
 })
 
+let hobby = document.querySelectorAll(".hobby");
 hobby.forEach((h,i)=>{
     h.addEventListener('click', function run(){
         h.style.background="rgb(144, 59, 255)";
