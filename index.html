@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prarthana Karmakar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- -------header------ -->
+
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="logo.jpeg" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Personal Projects</a></li>
+                    <li><a href="#hobbies">Interest and Hobbies</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Pursuing UG</p>
+                <h1>Hey, I'm <span>Prarthana Karmakar</span> <br>from Kolkata, India</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- ------about------ -->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="fp.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am a dedicated student currently pursuing B.Tech degree in Computer Science and Engineering at Techno Main Salt Lake. With a strong academic background, I completed my 10th and 12th studies from B.D.M International. I have developed a portfolio that showcases my skills and personal projects, and interests beyond the technical realm. I have a keen interest in web development and ready to deepen my understanding and skills in creating engaging and dynamic websites and web applications by expanding my knowledge in this field. However, I am eager to explore other technical domains as well and receptive to learn about emerging technologies and fields such as mobile app development, artificial intelligence, data science, and cybersecurity.</p>
+                    
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>C</span></li>
+                            <li>C++</li>
+                            <li><span>Java</span></li>
+                            <li>SQL</li>
+                            <li><span>HTML</span></li>
+                            <li>CSS</li>
+                            <li><span>JavaScript</span></li>
+                            <li>Python</li>
+                        </ul>
+                        
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>10th Grade (CBSE)</span><br>From B.D.M International with 94%, YOP: 2018</li>
+                            <li><span>12th Grade (CBSE)</span><br>From B.D.M International with 95%, YOP: 2020</li>
+                            <li><span>B.Tech (MAKAUT)</span><br>From Techno Main Salt Lake with 9.346 CGPA (till sem 5), YOP: 2024</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ------projects------ -->
+
+    <div id="projects">
+        <div class="container">
+            <h1 class="sub-title">Personal Projects</h1>
+            <div class="projects-list">
+                <div class="project">
+                    <img class="image" src="w1.jpg">
+                    <div class="layer">
+                        <h3>PurpleMp3</h3>
+                        <p>A simple Music Player website created using HTML, CSS and JavaScript. It currently consists of a couple of chosen songs and some functionalities.</p>
+                        <a href="https://prar02.github.io/PurpleMp3/"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="project">
+                    <img class="image" src="w2.jpg">
+                    <div class="layer">
+                        <h3>Personal Portfolio</h3>
+                        <p>A personal portfolio created using HTML, CSS and JavaScript. It showcases my technical skills, academic qualifications, hobbies and contact details. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ------hobbies------ -->
+
+    <div id="hobbies">
+        <div class="container">
+            <h1 class="sub-title">Interests and Hobbies</h1>
+            <div class="hobbies-list">
+                <div class="hobby">
+                    <i class="fa-solid fa-palette"></i>
+                    <h2>Sketch</h2>
+                    <p>I love making some art in my spare time. I have been learning to paint since I was a kid and I love it since then.</p>
+                </div>
+                <div class="hobby">
+                    <i class="fa-solid fa-headphones"></i>
+                    <h2>Music</h2>
+                    <p>I mostly listen to music in my leisure time or while I am engaged in tasks that doesn't require intense mental focus.</p>
+                </div>
+                <div class="hobby">
+                    <i class="fa-solid fa-film"></i>
+                    <h2>Movies</h2>
+                    <p>When I have some good amount of free time, I immerse myself in movies and series, particularly from the Marvel universe, horror and sci-fi genres.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -----contact----- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i>prar98312@gmail.com</p>
+                    <p><i class="fa-brands fa-whatsapp"></i>9007718580</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/prarthana-karmakar-98312prar/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.facebook.com/prarthana.karmakar02"><i class="fa-brands fa-facebook"></i></a>
+                    </div>
+                    <a href="Prarthana_Karmakar_Resume.pdf" download class="btn">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn">Submit</button>
+                    </form>
+                    <span id="msg">&nbsp;</span>
+                </div>
+            </div>
+        </div>
+        <div class="declare">
+            <p>I hereby declare that above information is correct to the best of my knowledge and belief.</p>
+        </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/fad0a62af9.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
